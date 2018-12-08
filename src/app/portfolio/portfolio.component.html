@@ -1,0 +1,62 @@
+<!-- Portfolio Section -->
+<section id="portfolio" class="section-padding">
+  <!-- Container Starts -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title wow fadeInDown animated" data-wow-delay="0.3s">{{Portfolio.title}}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <!-- Portfolio Controller/Buttons -->
+        <div class="controls text-center wow fadeInUpQuick" data-wow-delay=".6s">
+          <a class="btn btn-common" [class.active]="filterBy=='all'" (click)="filterBy='all'">
+            All 
+          </a>
+          <a class="btn btn-common"[class.active]="filterBy=='boats'" (click)="filterBy='boats'">
+            Branding 
+          </a>
+          <a class="btn btn-common"[class.active]="filterBy=='library'" (click)="filterBy='library'">
+            Marketing
+          </a>
+          <a class=" btn btn-common" [class.active]="filterBy=='camping'" (click)="filterBy='camping'">
+            Planning 
+          </a>
+         
+        </div>
+        <!-- Portfolio Controller/Buttons Ends-->
+      </div>
+
+      <!-- Portfolio Recent Projects -->
+      <div id="portfolio" class="row wow fadeInUpQuick" data-wow-delay="0.8s">
+        <div class="col-lg-4 col-md-6 col-xs-12  marketing planning" *ngFor = 'let image of (visibleImages | imageFilter:filterBy)'>
+          <div class="portfolio-item">
+            <div class="portfolio-img">
+              <img src="../{{image.url}}" alt="" />
+            </div>
+            <div class="portfoli-content">
+              <div class="sup-desc-wrap">
+                <div class="sup-desc-inner">
+                  <div class="sup-link">
+                    <a class="left-link" href="#"><i class="fa fa-link"></i></a>
+                    <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                  <div class="sup-meta-wrap">
+                    <a class="sup-title" href="#">
+                      <h4>TITLE HERE</h4>
+                    </a>
+                    <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container Ends -->
+</section>
+<!-- Portfolio Section Ends -->
+

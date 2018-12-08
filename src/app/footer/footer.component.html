@@ -1,0 +1,95 @@
+<!-- Footer Section -->
+<footer class="footer">
+  <!-- Container Starts -->
+  <div class="container">
+    <!-- Row Starts -->
+    <div class="row section">
+      <!-- Footer Widget Starts -->
+      <div class="footer-widget col-lg-3 col-md-6 col-xs-12 wow fadeIn">
+        <h3 class="small-title">
+          {{footer.titles[0]}}
+        </h3>
+        <p>
+         {{footer.pa}}
+        </p>
+        <div class="social-footer">
+          <a href="#" *ngFor = 'let social of footer.socials'><i class="fa {{social}} icon-round"></i></a>
+        </div>
+      </div>
+      <!-- Footer Widget Ends -->
+
+      <!-- Footer Widget Starts -->
+      <div class="footer-widget col-lg-3 col-md-6 col-xs-12 wow fadeIn" data-wow-delay=".2s">
+        <h3 class="small-title">
+          {{footer.titles[1]}}
+        </h3>
+        <ul class="menu" *ngFor = 'let link of footer.links'>
+          <li><a href="#">{{link}}</a></li>
+        </ul>
+      </div>
+      <!-- Footer Widget Ends -->
+
+      <!-- Footer Widget Starts -->
+      <div class="footer-widget col-lg-3 col-md-6 col-xs-12 wow fadeIn" data-wow-delay=".5s">
+        <h3 class="small-title">
+          {{footer.titles[2]}}
+        </h3>
+        <div class="plain-flicker-gallery" >
+          <a href="#" *ngFor = 'let pic of footer.pics'><img src="assets/img/flicker/{{pic}}" alt=""></a>
+        </div>
+      </div>
+      <!-- Footer Widget Ends -->
+
+      <!-- Footer Widget Starts -->
+      <div class="footer-widget col-lg-3 col-md-6 col-xs-12 wow fadeIn" data-wow-delay=".8s">
+        <h3 class="small-title">
+          {{footer.titles[3]}}
+        </h3>
+        <div class="contact-us">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-common">Submit</button>
+          </form>
+        </div>
+      </div>
+      <!-- Footer Widget Ends -->
+    </div>
+    <!-- Row Ends -->
+  </div>
+  <!-- Container Ends -->
+
+  <!-- Copyright -->
+  <div id="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-xs-12">
+          <p class="copyright-text">All copyrights reserved © 2018 - Designed &amp; Developed by <a rel="nofollow" href="https://uideck.com">UIdeck</a>
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12">
+          <ul class="nav nav-inline  justify-content-end ">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sitemap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Terms of services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright  End-->
+
+</footer>

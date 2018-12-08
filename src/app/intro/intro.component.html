@@ -1,0 +1,26 @@
+<carousel>
+  <slide *ngFor ='let slider of sliders'>
+    <img src="../../assets/img/slider/{{slider.img}}" alt="first slide" style="display: block; width: 100%;">
+    <div class="carousel-caption d-none d-md-block">
+      <h3>{{slider.header}}</h3>
+      <p>{{slider.para}}</p>
+      <a href="#" class="btn btn-lg btn-common animated fadeInUp">Download Now</a>
+    </div>
+  </slide>
+</carousel>
+
+<!-- About Section Start -->
+<div id="about" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-xs-12" *ngFor = 'let one of about'>
+        <div class="about block text-center">
+          <img src="assets/img/about/{{one.pic}}" alt="">
+          <h5><a href="#">{{one.title}}</a></h5>
+          <p>{{one.paraa}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About Section End -->

@@ -1,0 +1,40 @@
+<!-- Feature Section Start -->
+<div id="feature" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title wow fadeInDown animated" data-wow-delay="0.3s">Features</h2>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Start featured -->
+      <div class="col-lg-4 col-md-6 col-xs-12" *ngFor = 'let onefeature of features.feature'>
+        <div class="featured-box-item">
+          <div class="featured-icon">
+            <i class="fa fa-{{onefeature.icon}}"></i>
+          </div>
+          <div class="featured-content">
+            <h4>{{onefeature.title}}</h4>
+            <p>{{onefeature.para}}</p>
+          </div>
+        </div>
+      </div>
+      <!-- End featured -->
+    </div>
+  </div>
+</div>
+<!-- Feature Section End -->
+<!-- facts Section Start -->
+<div id="counter">
+  <div class="container">
+    <div class="row count-to-sec">
+      <div class="col-lg-3 col-md-6 col-xs-12 count-one" *ngFor = 'let fact of features.facts'>
+        <span class="icon"><i class="fa fa-{{fact.icon}}"> </i></span>
+        <h3 class="timer count-value" data-to="561" data-speed="1000">{{fact.number}}</h3>
+        <hr class="width25-divider">
+        <small class="count-title">{{fact.para}}</small>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- facts Section End -->

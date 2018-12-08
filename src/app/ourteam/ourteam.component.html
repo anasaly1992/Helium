@@ -1,0 +1,33 @@
+<!-- Team Section Start -->
+<div id="team" class="team-members-tow section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title wow fadeInDown animated" data-wow-delay="0.3s">{{team.title}}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-xs-12" *ngFor = 'let employee of team.detailes'>
+        <!-- Team Item Starts -->
+        <figure>
+          <img src="assets/img/team/{{employee.img}}" alt="">
+          <div class="image-overlay">
+            <div class="overlay-text text-center">
+              <div class="info-text">
+                <strong>{{employee.name}}</strong>
+                <span>{{employee.job}}</span>
+              </div>
+              <hr class="small-divider">
+              <ul class="social-icons">
+                <li *ngFor = 'let one of employee.social'><a href="#"><i class="fa {{one}}" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </figure>
+        <!-- Team Item Ends -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Team Section End -->
+<!-- end -->
